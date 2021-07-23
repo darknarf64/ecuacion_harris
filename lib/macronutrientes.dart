@@ -111,6 +111,7 @@ class _MacronutrientesState extends State<Macronutrientes> {
                 setState(() {
                   _visibility = true;
                 });
+                FocusScope.of(context).requestFocus(new FocusNode());
               });
   }
 
@@ -183,11 +184,6 @@ class _MacronutrientesState extends State<Macronutrientes> {
     chogramos = chogramos / 4;
     chogramos = redondear1(chogramos);
   }
-
-  // double chogramos = 0.0;
-  // double choPorciento = 0.0;
-  // double grasaGramos = 0.0;
-  // double grasaPorciento = 0.0;
 
   double redondear1(double numero) {
     numero = numero * 10;

@@ -138,6 +138,7 @@ class _HomePage extends State<HomePage> {
                 setState(() {
                   _visibility = true;
                 });
+                FocusScope.of(context).requestFocus(new FocusNode());
               });
   }
 
